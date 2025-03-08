@@ -1,0 +1,74 @@
+@charset 'utf-8';
+/*======================================================================*/
+.title{/* Fr (5683 :p 240), (5683 :p 284)*/
+  height:310px;
+  background-image:url(../images/works/bg-main.jpg);
+  background-repeat:no-repeat;/* Fr (5683 :p 243)*/
+  background-position:center center;
+  background-size:cover;
+  display:flex;/* Fr (5683 :p 243)*/
+  flex-direction:column;/* Fr (5683 :p 244)*/
+  justify-content:center;/* Fr (5683 :p 245)*/
+  align-items:center;
+  color:#fff;
+  text-shadow:1px 1px 10px #421;/* Org #4b2c14*/
+}
+/*======================================================================*/
+.item-list{/* Fr (5683 :p 284)*/
+  width:930px;
+  max-width:90%;
+  margin-top:75px;
+  margin-left:auto;
+  margin-right:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,240px);/* Fr (5683 :p 288)*/
+  column-gap:95px;
+  row-gap:70px;
+  justify-content:center;/* Fr (5683 :p 288)*/
+}
+/*======================================================================*/
+.item-list dl{/* Fr (5683 :p 220), (5683 :p 289) */
+  margin-top:10px;/* Org 20px */
+}
+/*======================================================================*/
+.item-list dt{/* Fr (5683 :p 221) */
+  font-weight:bold;
+}
+/*======================================================================*/
+.item-list dd{/* Fr (5683 :p 221) */
+  font-size:13px;
+  line-height:20px;
+  margin-top:7px;/* Org 10px */
+}
+/*======================================================================*/
+.item-list .price{
+  font-weight:bold;
+  margin-top:10px;/* Org 15px*/
+}
+/*======================================================================*/
+.item-list li{/* Fr (5683 :p 288)*/
+  position:relative;
+}
+/*======================================================================*/
+.item-list .item-label{/* Fr (5683 :p 288)*/
+  position:absolute;
+  top:0;
+  left:calc(100% + 18px);/* Org 18px*/
+  font-size:12px;/* Org 10px*/
+  white-space:nowrap;
+  transform-origin:top left;/* Fr (5683 :p 288)*/
+  transform:rotate(90deg);
+}
+/*======================================================================*/
+.footer{
+  margin-top:100px;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 800px){
+  /*======================================================================*/
+  .item-list{/* Fr (5683 :p 294)*/
+    margin-top:45px;
+    row-gap:40px;
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/

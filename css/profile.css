@@ -1,0 +1,151 @@
+@charset 'utf-8';
+/*======================================================================*/
+.title{/* Fr (5683 :p 240)*/
+  height:310px;
+  background-image:url(../images/profile/bg-main-05.jpg);
+  background-repeat:no-repeat;/* Fr (5683 :p 243)*/
+  background-position:center center;
+  /*background-size:contain;*/
+  background-size:cover;
+  display:flex;/* Fr (5683 :p 243)*/
+  flex-direction:column;/* Fr (5683 :p 244)*/
+  justify-content:center;/* Fr (5683 :p 245)*/
+  align-items:center;
+  color:#00f;
+  /* color:#70b0e0;*/
+  text-shadow:1px 1px 10px #421;/* Org #4b2c14*/
+}
+/*======================================================================*/
+.title h1{/* Fr (5683 :p 245)*/
+  font-family:sans-serif;
+  font-size:32px;/* Org 32px*/
+  font-weight:bold;
+}
+/*======================================================================*/
+.title p{/* Fr (5683 :p 246)*/
+  font-size:14px;
+  margin-top:15px;
+}
+/*======================================================================*/
+.feature{/* Fr (5683 :p 247)*/
+  display:flex;
+  justify-content:space-between;
+  width:930px;
+  max-width:90%;
+  margin-top:75px;
+  margin-left:auto;
+  margin-right:auto;
+  align-items:flex-start;/* Fr (5683 :p 245)*/
+}
+/*======================================================================*/
+.feature img{/* Fr (5683 :p 245)*/
+  width:360px;
+}
+/*======================================================================*/
+.feature-text{/* Fr (5683 :p 249)*/
+  max-width:500px;
+  margin-right:40px;
+}
+/*======================================================================*/
+.reverse{/*Fr (5683 :p 249)*/
+  flex-direction:row-reverse;
+}
+/*======================================================================*/
+.reverse .feature-text{/* Fr (5683 :p 250)*/
+  margin-left:40px;
+  margin-right:0;
+}
+/*======================================================================*/
+.feature-text h2{/* Fr (5683 :p 250)*/
+  font-size:22px;
+  font-weight:bold;
+  line-height:30px;
+}
+/*======================================================================*/
+.feature-text h2::after{/* Fr (5683 :p 249)*/
+  content:'';
+  display:block;
+  width:36px;
+  height:3px;
+  background-color:#000;
+  margin-top:20px;
+}
+/*======================================================================*/
+.feature-text p{/* Fr (5683 :p 249)*/
+  font-size:15px;
+  line-height:1.5;/* Org 28px */
+  margin-top:25px;
+}
+/*======================================================================*/
+.movie{/* Fr (5683 :p 249)*/
+  width:930px;
+  max-width:90%;
+  background-color:#f8f8f8;
+  padding:50px 60px;
+  margin-top:55px;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*======================================================================*/
+.movie h2{/* Fr (5683 :p 254)*/
+  font-size:22px;
+  font-weight:bold;
+  text-align:center;
+}
+/*======================================================================*/
+.movie h2::after{/* Fr (5683 :p 255)*/
+  content:'';
+  display:block;
+  width:36px;
+  height:3px;
+  background-color:#000;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*======================================================================*/
+.movie iframe{/* Fr (5683 :p 255)*/
+  display:block;
+  width:100%;
+  height:456px;/* (930 - 60 - 60) * 9/16 */
+  margin-top:30px;
+}
+/*======================================================================*/
+.movie p{/* Fr (5683 :p 256)*/
+  font-size:15px;
+  line-height:28px;
+  margin-top:20px;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 800px){
+  /*======================================================================*/
+  .feature{/* Fr (5683 :p 259)*/
+    display:block;
+    width:500px;/* Fr (5683 :p 260)*/
+    margin-top:45px;
+  }
+  /*======================================================================*/
+  .feature-text{/* Fr (5683 :p 261)*/
+    margin-right:0;
+  }
+  /*======================================================================*/
+  .reverse .feature-text{/* Fr (5683 :p 261)*/
+    margin-left:0;
+  }
+  /*======================================================================*/
+  .feature img{/* Fr (5683 :p 261)*/
+    width:100%;
+    height:auto;
+    margin-top:25px;/* Fr (5683 :p 262)*/
+  }
+  /*======================================================================*/
+  .movie{/* Fr (5683 :p 262)*/
+    width:500px;
+    padding:30px 25px;
+  }
+  /*======================================================================*/
+  .movie iframe{/* Fr (5683 :p 263)*/
+    height:240px;
+  }
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/

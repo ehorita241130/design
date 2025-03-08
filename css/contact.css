@@ -1,0 +1,182 @@
+@charset 'utf-8';
+/*======================================================================*/
+.title{/* Fr (5683 :p 240)*/
+  height:310px;
+  background-image:url(../images/contact/bg-main-02.jpg);
+  /*background-image:url(../images/contact/bg-main.jpg);*/
+  background-repeat:no-repeat;/* Fr (5683 :p 243)*/
+  background-position:center center;
+  background-size:cover;
+  display:flex;/* Fr (5683 :p 243)*/
+  flex-direction:column;/* Fr (5683 :p 244)*/
+  justify-content:center;/* Fr (5683 :p 245)*/
+  align-items:center;
+  color:#fff;
+  text-shadow:1px 1px 10px #421;/* Org #4b2c14*/
+}
+/*======================================================================*/
+.title h1{/* Fr (5683 :p 245)*/
+  font-family:sans-serif;
+  font-size:32px;/* Org 32px*/
+  font-weight:bold;
+}
+/*======================================================================*/
+.title p{/* Fr (5683 :p 246)*/
+  font-size:14px;
+  margin-top:15px;
+}
+/*======================================================================*/
+.main h2{/* Fr (5683 :p 361)*/
+  font-size:22px;
+  font-weight:bold;
+  line-height:30px;
+}
+/*======================================================================*/
+.main h2::after{
+  content:'';
+  display:block;
+  width:36px;
+  height:3px;
+  background-color:#000;
+  margin-top:20px;
+}
+/*======================================================================*/
+.map{/* Fr (5683 :p 361)*/
+  width:930px;
+  max-width:90%;
+  margin-top:75px;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*======================================================================*/
+.map iframe{/* Fr (5683 :p 361)*/
+  display:block;
+  width:100%;
+  height:320px;
+  margin-top:25px;
+}
+/*======================================================================*/
+.contact{/* Fr (5683 :p 363)*/
+  width:930px;
+  max-width:90%;
+  margin-top:30px;
+  /*margin-top:75px;*/
+  margin-left:auto;
+  margin-right:auto;
+}
+/*======================================================================*/
+.form-area{/* Fr (5683 :p 364)*/
+  background-color:#f8f8f8;
+  border:1px solid #aaaaaa;
+  margin-top:25px;
+  padding:10px 20px;
+  /*padding:30px;*/
+  display:flex;
+  flex-wrap:wrap;
+}
+/*======================================================================*/
+.form-area dt{/* Fr (5683 :p 365)*/
+  width:200px;
+  padding:15px 0;
+  font-size:15px;
+  font-weight:bold;
+  line-height:24px;
+}
+/*======================================================================*/
+.form-area dt .required::after{
+  content:'必須';
+  font-size:11px;
+  color:#eb4f32;
+  margin-left:10px;
+}
+/*======================================================================*/
+.form-area dd{
+  width:calc(100% - 200px);
+  padding:15px 0;
+}
+/*======================================================================*/
+.input-text{/* Fr (5683 :p 367)*/
+  width:100%;
+  max-width:280px;
+  height:40px;
+  padding-left:10px;
+  padding-right:10px;
+}
+/*======================================================================*/
+.select-box{/* Fr (5683 :p 367)*/
+  width:200px;
+  height:40px;
+}
+/*======================================================================*/
+.radio-button{/* Fr (5683 :p 368)*/
+  display:block;
+  margin-top:20px;
+}
+/*======================================================================*/
+.radio-button:first-child{
+  margin-top:0;
+}
+/*======================================================================*/
+.radio-button input{
+  margin-right:8px; 
+}
+/*======================================================================*/
+.message{/* Fr (5683 :p 369)*/
+  width:100%;
+  height:200px;/* Org 260px*/
+  padding:10px;
+  line-height:1.5;
+}
+/*======================================================================*/
+.confirm-text{/* Fr (5683 :p 369)*/
+  font-size:14px;
+  line-height:22px;
+  margin-top:20px;/* Org 30px*/
+}
+/*======================================================================*/
+.submit-button{/* Fr (5683 :p 370)*/
+  background-color:#f4dd64;
+  display:inline-block;
+  min-width:180px;
+  line-height:48px;
+  border-radius:24px;
+  font-family:sans-serif;
+  font-size:16px;/* Org 14px */
+  font-weight:bold;/* Added*/
+  text-align:center;
+  margin-top:20px;/* Org 35px*/
+  cursor:pointer;
+  border:none;
+}
+/*======================================================================*/
+.submit-button:hover{/* Fr (5683 :p 372)*/
+  background-color:#dab500;
+}
+/*======================================================================*/
+.footer{/* Fr (5683 :p 372)*/
+  margin-top:20px;/* Org 100px */
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 800px){
+  /*======================================================================*/
+  .map,
+  .contact{/* Fr (5683 :p 372)*/
+    width:500px;
+    margin-top:45px;
+  }
+  /*======================================================================*/
+  .form-area dt,
+  .form-area dd{/* Fr (5683 :p 375)*/
+    width:100%;
+  }
+  /*======================================================================*/
+  .form-area dt{/* Fr (5683 :p 375)*/
+    padding-bottom:0;
+  }
+  /*======================================================================*/
+  .submit-button{/* Fr (5683 :p 375)*/
+    width:100%;
+  }
+  /*======================================================================*/
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/

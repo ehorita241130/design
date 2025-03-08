@@ -1,0 +1,227 @@
+@charset 'utf-8';
+/*======================================================================*/
+.title{/* Fr Fr (5683 :p 240), (5683 :p 284)*/
+  height:310px;
+  background-image:url(../images/service/bg-main-03.jpg);
+  background-repeat:no-repeat;/* Fr (5683 :p 243)*/
+  background-position:center center;
+  background-size:cover;
+  display:flex;/* Fr (5683 :p 243)*/
+  flex-direction:column;/* Fr (5683 :p 244)*/
+  justify-content:center;/* Fr (5683 :p 245)*/
+  align-items:center;
+  color:#fff;
+  text-shadow:1px 1px 10px #421;/* Org #4b2c14*/
+}
+/*======================================================================*/
+.title h1{/* Fr (5683 :p 245)*/
+  font-family:sans-serif;
+  font-size:32px;/* Org 32px*/
+  font-weight:bold;
+}
+/*======================================================================*/
+.title p{/* Fr (5683 :p 246)*/
+  font-size:14px;
+  margin-top:15px;
+}
+/*======================================================================*/
+.shop-contents{/* Fr (5683 :p 319)*/
+  width:1080px;
+  max-width:90%;
+  margin-top:75px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row-reverse;
+}
+/*======================================================================*/
+.shop-item{/* Fr (5683 :p 319)*/
+  flex-grow:1;
+  max-width:765px;
+}
+/*======================================================================*/
+.shop-item h2{/* Fr (5683 :p 319)*/
+  font-size:22px;
+  font-weight:bold;
+  line-height:30px;
+}
+/*======================================================================*/
+.shop-item h2::after{
+  content:'';
+  display:block;
+  width:36px;
+  height:3px;
+  background-color:#000;
+  margin-top:20px;
+}
+/*======================================================================*/
+.item-list{/* Fr (5683 :p 319)*/
+  margin-top:25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,220px);
+  column-gap:50px;
+  row-gap:40px;
+}
+/*======================================================================*/
+.item-list a {/* Fr (5683 :p 322)*/
+  display:block;
+  transition-duration:0.2s;/* Fr (5683 :p 323)*/
+}
+/*======================================================================*/
+.item-list a:hover{
+  transform:scale(1.1);/* Org 1.05*/
+} 
+/*======================================================================*/
+.item-list dl{/* Fr (5683 :p 220) */
+  margin-top:10px;/* Org 20px */
+}
+/*======================================================================*/
+.item-list dt{/* Fr (5683 :p 221) */
+  font-weight:bold;
+}
+/*======================================================================*/
+.item-list dd{/* Fr (5683 :p 221) */
+  font-size:13px;
+  line-height:20px;
+  margin-top:7px;/* Org 10px */
+}
+/*======================================================================*/
+.shop-menu{/* Fr (5683 :p 325)*/
+  flex-shrink:0;
+  margin-right:60px;
+  position:relative;
+}
+/*======================================================================*/
+.shop-menu-inner{/* Fr (5683 :p 326)*/
+  position:sticky;
+  top:30px;/* Org 30px*/
+  left:0;
+  ritht:0;
+}
+/*======================================================================*/
+.shop-menu-inner h2{/* Fr (5683 :p 326)*/
+  font-size:18px;
+  font-weight:bold;
+}
+/*======================================================================*/
+.shop-menu-inner ul{/* Fr (5683 :p 327)*/
+  list-style-type:disc;
+  margin-top:20px;
+  margin-left:20px;
+}
+/*======================================================================*/
+.shop-menu-inner li{
+  font-size:14px;
+  magin-top:15px;
+}
+/*======================================================================*/
+/*======================================================================*/
+.item-area{/* Fr (5683 :p 328)*/
+  margin-top:20px;
+  display:flex;
+}
+/*======================================================================*/
+.item-area img{
+  width:50%;
+  max-width:380px;
+}
+/*======================================================================*/
+.about-item{/* Fr (5683 :p 328)*/
+  margin-left:30px;
+}
+/*======================================================================*/
+.about-item .item-text{
+  font-size:14px;
+  line-height:26px;
+}
+/*======================================================================*/
+.about-item .item-price{
+  font-weight:bold;
+  margin-top:20px;
+}
+/*======================================================================*/
+.about-item a{
+  background-color:#f4dd64;
+  display:inline-block;
+  min-width:180px;
+  line-height:48px;
+  border-radius:24px;
+  font-family:sans-serif;
+  font-size:14px;
+  text-align:center;
+  margin-top:20px;/* Org 35px*/
+}
+/*======================================================================*/
+.about-item a:hover{
+  background-color:#e0c000;
+}
+/*======================================================================*/
+.recommended{/* Fr (5683 :p 328)*/
+  margin-top:50px;/* Org 60px */
+}
+/*======================================================================*/
+.footer{/* Fr (5683 :p 332)*/
+  margin-top:50px;/* Org 100px */
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+@media (max-width: 800px) {
+  /*======================================================================*/
+  .shop-contents{/* Fr (5683 :p 334)*/
+    display:block;
+    max-width:100%;
+    margin-top:60px;
+  }
+  /*======================================================================*/
+  .shop-item{/* Fr (5683 :p 334)*/
+    max-width:540px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  /*======================================================================*/
+  .item-list{/* Fr (5683 :p 334)*/
+    grid-template-columns:repeat(2,1fr);
+    column-gap:35px;
+  }
+  /*======================================================================*/
+  .shop-menu{/* Fr (5683 :p 334)*/
+    background-color:#f8f8f8;
+    padding-top:50px;
+    padding-bottom:50px;
+    margin-top:60px;
+    margin-right:0;
+  }
+  /*======================================================================*/
+  .shop-menu-inner{/* Fr (5683 :p 337)*/
+    max-width:540px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:20px;
+    padding-right:20px
+  }
+  /*======================================================================*/
+  .item-area{/* Fr (5683 :p 338)*/
+    display:block;
+  }
+  /*======================================================================*/
+  .item-area img{
+    width:100%;
+    max-width:100%;
+  }
+  /*======================================================================*/
+  .about-item{
+    margin-top:20px;
+    margin-left:0;
+  }
+  /*======================================================================*/
+  .about-item a{/* Fr (5683 :p 339)*/
+    width:100%;
+  }
+  /*======================================================================*/
+  .footer{/* Fr (5683 :p 337)*/
+    margin-top:0;
+  }
+  /*======================================================================*/
+}
